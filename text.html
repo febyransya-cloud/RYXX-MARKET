@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RYXX MARKET</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#fff}header{position:relative;background:url('welcome.jpg') center/cover no-repeat;height:420px;display:flex;align-items:center;justify-content:center;text-align:center} header::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.5)} .hero{position:relative;z-index:2} .hero h1{font-size:40px;font-weight:800;animation:glow 2s infinite alternate} .hero p{margin-top:10px}
+
+.btn{display:inline-block;margin:10px;padding:12px 20px;background:#22c55e;color:#000;border-radius:10px;text-decoration:none;font-weight:bold} .btn:hover{background:#4ade80}
+
+section{padding:25px} .card{background:#1e293b;padding:20px;border-radius:12px;margin-top:10px}
+
+footer{text-align:center;padding:20px;background:#020617}
+
+.popup{position:fixed;top:0;left:0;width:100%;height:100%;display:none;justify-content:center;align-items:center;background:rgba(0,0,0,0.8)} .popup-box{background:#1e293b;padding:20px;border-radius:12px;text-align:center;max-width:400px}
+
+@keyframes glow{from{text-shadow:0 0 10px #22c55e}to{text-shadow:0 0 30px #4ade80}} </style>
+
+</head>
+<body><header>
+<div class="hero">
+<h1>WELCOME RYXX MARKET</h1>
+<p>Top Up Cepat • Aman • Terpercaya</p>
+<a href="#" class="btn" onclick="openPopup()">TOP UP SEKARANG</a>
+<a href="https://wa.me/6283170791900?text=Halo%20admin%20saya%20mau%20beli%20akun" class="btn">BELI AKUN</a>
+</div>
+</header><section>
+<h2>🎮 Jual Beli Akun Game</h2>
+<div class="card">
+<a href="https://whatsapp.com/channel/0029VbCGYBF7IUYNkwyAEt0v" class="btn">STOK AKUN FREE FIRE</a>
+<a href="https://wa.me/6283170791900?text=Halo%20admin%20saya%20mau%20jual%20akun" class="btn">JUAL AKUN</a>
+</div><h2>💎 Top Up Game</h2>
+<div class="card">
+<a href="#" class="btn" onclick="openPopup()">TOP UP ALL GAME</a>
+</div><h2>⭐ Testimoni</h2>
+<div class="card">
+<p>Lihat bukti transaksi & kepuasan customer kami:</p>
+<a href="https://whatsapp.com/channel/0029Vb74JFoEquiS66Dd2V1l" class="btn">LIHAT TESTIMONI</a>
+</div>
+</section><div class="popup" id="popup">
+<div class="popup-box">
+<h3>TOP UP ALL GAME</h3>
+<p>Mau top up cepat & aman? langsung klik bawah 🔥</p>
+<a href="https://wa.me/6283170791900?text=Halo%20admin%20saya%20mau%20top%20up" class="btn">LANJUT TOP UP</a>
+<br><br>
+<a href="#" onclick="closePopup()" class="btn">TUTUP</a>
+</div>
+</div><script>
+function openPopup(){document.getElementById('popup').style.display='flex'}
+function closePopup(){document.getElementById('popup').style.display='none'}
+</script><footer>© RYXX MARKET 2026</footer></body>
+</html>
